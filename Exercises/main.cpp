@@ -75,9 +75,11 @@ int main(int argc, char* argv[]) {
 	double taxes = subTotal * taxRate;
 	double total = subTotal + taxes;
 	// TODO: Afficher le nom du client, son sous-total, taxes et total (alignés sur 10 colonnes, deux décimales).
-	cout << clientName << "\n"
-	//<< "SUB TOTAL " << setw(10) << fixed << setprecision(2) << subTotal << " $" << "\n"
-	printf("TAXES%10.2f $" "\n", taxes);
+	cout << clientName << "\n";
+		//<< "SUB TOTAL " << setw(10) << fixed << setprecision(2) << subTotal << " $" << "\n"
+		printf("SUB TOTAL%10.2f $" "\n", subTotal);
+		printf("TAXES%10.2f $" "\n", taxes);
+		printf("TOTAL%10.2f $" "\n", total);
 	//<< "TAXES     " << taxes << "\n"
 	//<< "TOTAL     " << total << "\n";
 }
